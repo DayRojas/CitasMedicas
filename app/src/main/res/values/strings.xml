@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Citas médicas</string>
+    <string name="nombre">Nombre</string>
+    <string name="especialidad_prompt">Elija una especialidad</string>
+    <string-array name="especialidades">
+        <item>Medicina general</item>
+        <item>Cardiología</item>
+        <item>Psiquiatría</item>
+        <item>Nefrología</item>
+
+    </string-array>
+    <string name="presencial">Presencial</string>
+    <string name="remota">Remota</string>
+    <string name="No_vacunado">No vacunado</string>
+    <string name="vacunado_1_dosis">Vacunado 1 dosis</string>
+    <string name="vacunado_2_dosis">Vacunado 2 dosis</string>
+    <string name="vacunado_3_dosis">Vacunado 3 dosis</string>
+    <string name="vacuna">Vacunas:</string>
+    <string-array name="vacunas_Covid">
+        <item>@string/No_vacunado</item>
+        <item>@string/vacunado_1_dosis</item>
+        <item>@string/vacunado_2_dosis</item>
+        <item>@string/vacunado_3_dosis</item>
+    </string-array>
+    <string name="solicitar">Solicitar</string>
+</resources>

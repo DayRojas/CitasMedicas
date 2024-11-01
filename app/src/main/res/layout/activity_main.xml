@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+
+        />
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre"
+        />
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione fecha:"
+
+        />
+
+    <DatePicker
+        android:id="@+id/fecha_picker"
+        android:layout_width="418dp"
+        android:layout_height="316dp" />
+    <TextView
+        android:id="@+id/textViewEspecialidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la especialidad:"
+
+        />
+    <Spinner
+        android:id="@+id/especialidad_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/especialidad_prompt"
+        android:entries="@array/especialidades" />
+    <TextView
+        android:id="@+id/textViewModalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la modalidad:"
+
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/presencial_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/presencial" />
+
+        <RadioButton
+            android:id="@+id/remota_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remota" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/textViewVacuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Está vacunado por Covid?:"
+
+        />
+    <CheckBox
+        android:id="@+id/No_vacunado_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/No_vacunado" />
+
+    <CheckBox
+        android:id="@+id/vacunado_1_dosis_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vacunado_1_dosis" />
+
+    <CheckBox
+        android:id="@+id/vacunado_2_dosis_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vacunado_2_dosis" />
+    <CheckBox
+        android:id="@+id/vacunado_3_dosis_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vacunado_3_dosis" />
+
+    <Button
+        android:id="@+id/solicitar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solicitar" />
+
+</LinearLayout>
